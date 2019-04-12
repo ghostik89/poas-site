@@ -2,10 +2,20 @@
 @import "libs"
 @import "base"
 @import "vars"
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans')
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans')
 
 // Пользовательские стили
 .lablogocat
 
+
+.grid
+        display: grid
+
+.blocker
+    max-width: 1200px
+    margin: auto
+    padding: 0 1em
 
 header
     position: relative
@@ -15,27 +25,107 @@ header
     border-bottom: 1px solid #C2C2C2
 
     .header_container
-        display: grid
-        height: 2.5em
-    
-    .grid_header
+        height: 5em
         grid-template-rows: 2fr 8fr auto
         grid-gap: 1em
-
+        text-align: center
+    
     .lab_logo
-        position: 
-         position: relative;
-        left: 13.89%;
-        right: 72.29%;
-        top: 17.5%;
-        bottom: 16.25%;
-        display: flex;
+        position: relative
+        // left: 13.89%;
+        // right: 72.29%;
+        // top: 17.5%;
+        // bottom: 16.25%;
+        display: flex
+        align-content: center
+        align-items: center
+        margin-left: 1em
 
         .lablogocat
-            background-color: #B7B7B7
+            // background-color: #B7B7B7
             display: inline-block
             grid-column: 1
-            background-image: url('../img/logo_cat.png')
+            background: url('../img/logo_cat.png'), #ebe3e0
+            background-blend-mode: darken
+            height: 50px
+            min-width: 50px
+            background-repeat: no-repeat 
+
+        #text_logo
+            display: inline-flex
+            font-family: Fira Sans
+            font-style: normal
+            font-weight: 700
+            font-size: 22px
+            line-height: normal
+            color: #7E371C
+            margin-left: 2em    
+
+    #lang_ico
+        background-image: url('../img/lang_ico.png')
+        background-repeat: no-repeat
+        background-position: center right
+        grid-column: 3
+        width: 35px
+        background-size: contain
+
+    // #panel
+    //     position: relative;
+    //     left: 39.24%;
+    //     right: 20.07%;
+    //     top: 35%;
+    //     bottom: 35%;
+    //     grid-column: 2;
+    //     display: grid;
+    //     grid-template-rows: 2fr 8fr auto;
+    //     grid-gap: 5px;
+
+.wrapper
+    display: block
+    width: 100%
+
+    .intro_selection
+        position: relative
+        min-height: 30em
+        background: linear-gradient( rgba(147, 84, 60, 0.6), rgba(147, 84, 60, 0.6) ), url('../img/background001.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-attachment: scroll
+        background-size: cover
+        background-position: center 
+        z-index: 1
+        grid-template-columns: repeat(12, 1fr)
+        color: $main_text_color
+        font-family: $main_font
+        padding-left: 2em
+
+
+        h1
+            grid-column: span 12
+            font-weight: bold
+            font-size: 3em
+            margin-top: 2em
+
+        p
+            grid-column: span 7
+            font-weight: normal
+            font-size: 1.5em
+            line-height: normal
+
+    .team
+        position: relative
+        background: $team_color
+        color: $main_text_color
+        font-family: $main_font
+        font-style: normal
+        font-weight: normal
+        line-height: normal
+        grid-template-columns: repeat(12, 1fr)
+        grid-gap: 2em
+
+        article
+            
+    
 
         
 
