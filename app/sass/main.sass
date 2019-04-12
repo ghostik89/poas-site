@@ -4,5 +4,39 @@
 @import "vars"
 
 // Пользовательские стили
+.lablogocat
+
+
+header
+    position: relative
+    background-color: $header_color
+    width: 100%
+    z-index: 20
+    border-bottom: 1px solid #C2C2C2
+
+    .header_container
+        display: grid
+        height: 2.5em
+    
+    .grid_header
+        grid-template-rows: 2fr 8fr auto
+        grid-gap: 1em
+
+    .lab_logo
+        position: 
+         position: relative;
+        left: 13.89%;
+        right: 72.29%;
+        top: 17.5%;
+        bottom: 16.25%;
+        display: flex;
+
+        .lablogocat
+            background-color: #B7B7B7
+            display: inline-block
+            grid-column: 1
+            background-image: url('../img/logo_cat.png')
+
+        
 
 @import "media" // Всегда в конце

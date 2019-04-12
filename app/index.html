@@ -3,16 +3,17 @@
     <head>
         <title>POAS lab</title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/> -->
+        <link rel="stylesheet" type="text/css" href="css/new_style.css/>
     </head>
     <body>
         <header>
-            <div class="header_container">
-                <div .class="grid_header">
+            <div class="header_container grid_header">
                     <div class = "lab_logo">
-                        <img src="img\logo_cat.png" alt="logocat" width = 50px heigth= 50px/>
-                        <span id="text_logo">V.I.S.D.O.M Laboratory</span>
+                        <!-- <img src="img\logo_cat.png" alt="logocat" width = 50px heigth= 50px/> -->
+                        <div .class= "lablogocat"></div>
+                        <h3 id="text_logo">V.I.S.D.O.M Laboratory</h3>
                     </div>
                     <!-- <div id = "panel">
                             <a>Home</a>
@@ -23,19 +24,18 @@
                     </div> -->
                     <div id = "lang_ico"></div>
                 </div>
-            </div>
         </header>
         <div class="wrapper">
             <div class="intro_selection">
-                <div class="intro_text">
-                    <h2>Turning ideas into the products</h2>
-                    <span class="main_text">Our team’s goal is to build modern, innovative and helpful software for our partners.</span>
+                <div class="intro_text intro_grid">
+                    <h1>Turning ideas into the products</h1>
+                    <p class="main_text">Our team’s goal is to build modern, innovative and helpful software for our partners.</p>
                 </div>    
             </div>
             <div class="team_selection">
                 <div class="grid_team">
                     <article>
-                        <h2>Our team</h2>
+                        <h1>Our team</h>
                         <p>
                             V.I.S.D.O.M Laboratory has several development 
                             groups working with different projects and technologies. We are here 
@@ -43,19 +43,49 @@
                         </p>
                         <a>About us</a>
                     </article>
-                    <img src="img/macbook.png" alt="mac" width="416" height="206"/>
+                    <!-- <img src="img/macbook.png" alt="mac" width="416" height="206"/> -->
+                    <div id="macbook"></div>
                 </div>
             </div>
             <div class="partners_selection"></div>
-            <div class="news_section"></div>
+            <div class="news_section news_grid">
+                <h1>Latest news</h1>
+                <div class="news_blog">
+                    <h2>We’re hiring!</h2>
+                    <p class = "date"> Was published 1 day ago </p>
+                    <p>
+                        We are searching for people who study at the second year and older for our new development team. We would like to have an interview with you if you are interested in programming, study well and want to join our team. 
+                        If you think you fit these requirements, then fill the <span .class="inline_link">questionnaire</span> first.
+                    </p>
+                </div>
+                <div class="news_blog">
+                    <h2>We’re hiring!</h2>
+                    <p class = "date"> Was published 1 day ago </p>
+                    <p>
+                        We are searching for people who study at the second year and older for our new development team. We would like to have an interview with you if you are interested in programming, study well and want to join our team. 
+                        If you think you fit these requirements, then fill the <span .class="inline_link">questionnaire</span> first.
+                    </p>
+                </div>
+                <div class="news_blog">
+                    <h2>We’re hiring!</h2>
+                    <p class = "date"> Was published 1 day ago </p>
+                    <p>
+                        We are searching for people who study at the second year and older for our new development team. We would like to have an interview with you if you are interested in programming, study well and want to join our team. 
+                        If you think you fit these requirements, then fill the <span .class="inline_link">questionnaire</span> first.
+                    </p>
+                </div>
+            </div>
         </div>
         <footer>
-            <div .class = "grid_footer">
+            <div .class = "grid_headerr">
                 <div class = "lab_logo">
-                        <img src="img\logo_cat.png" alt="logocat" width = 50px heigth= 50px/>
-                        <p>V.I.S.D.O.M Laboratory</p>
+                    <div .class= "lablogocat"></div>
+                    <h3>V.I.S.D.O.M Laboratory</h3>
                 </div>
-                <span id="social"><a href="#">VK</a><a href="#">f</a></span>
+                <div id="social">
+                    <a href="#">VK</a>
+                    <a href="#">f</a>
+                </div>
             </div>
         </footer>
     </body>
