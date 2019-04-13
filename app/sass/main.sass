@@ -112,19 +112,193 @@ header
             font-size: 1.5em
             line-height: normal
 
-    .team
-        position: relative
-        background: $team_color
-        color: $main_text_color
-        font-family: $main_font
-        font-style: normal
-        font-weight: normal
-        line-height: normal
-        grid-template-columns: repeat(12, 1fr)
-        grid-gap: 2em
+    .team_selection
+        background: $team_color   
+    
+        .team
+            position: relative
+            color: $main_text_color
+            font-family: $main_font
+            font-style: normal
+            font-weight: normal
+            line-height: normal
+            grid-template-columns: repeat(12, 1fr)
+            grid-gap: 2em
+            margin: auto
+            padding: 0 2em
 
-        article
+            article
+                margin-top: 1em
+                grid-row: 1
+                grid-column: span 6
+
+                h1
+                    font-size: 2.5em
+
+                p
+                    font-size: 1.5em
+                    font-weight: normal
+                    line-height: normal
+
+            #macbook
+                margin-top: auto
+                margin-bottom: auto
+                grid-column: 7/ -1
+                grid-row: span 3
+                background: url('../img/macbook.png'), $team_color
+                background-repeat: no-repeat
+                background-blend-mode: darken
+                background-size: contain
+                background-position: center
+                max-height: 230px
+                min-height: 200px
+
+            .bottom
+                text-decoration: none
+                color: $main_text_color
+                font-size: 1.2em
+                margin: 2em 1em
+                padding: 0.5em 2em
+                border-radius: 1.5em
+                background: $partners_color
+
+    .partners_selection
+        background: $partners_color
+        
+
+        .partner
+            position: relative
+            color: $main_text_color
+            font-family: $main_font
+            grid-template-columns: repeat(12, 1fr)
+            grid-gap: 2em
+
+            h1
+                font-size: 2.53em
+                grid-column: span 12
+                grid-row: 1
+
+            p
+                grid-column: span 12
+                grid-row: 2
             
+            .image_massive
+                grid-column: span 12
+                grid-row: 3
+
+            .nav
+                text-align: center
+                grid-column: span 12
+                grid-row: 4   
+
+                #triangle_left
+                    border: solid #F97D29
+                    border-width: 0 0.5em 0.5em 0;
+                    display: inline-block;
+                    padding: 0.5em;
+                    transform: rotate(135deg)
+
+                #triangle_right
+                    border: solid #F97D29
+                    border-width: 0 0.5em 0.5em 0;
+                    display: inline-block;
+                    padding: 0.5em;
+                    transform: rotate(-45deg)
+
+                
+                #triangle_left:hover
+                    border: solid #7E371C
+                    border-width: 0 0.5em 0.5em 0;
+                    display: inline-block;
+                    padding: 0.5em;
+                    transform: rotate(135deg)
+
+                #triangle_right:hover
+                    border: solid #7E371C
+                    border-width: 0 0.5em 0.5em 0;
+                    display: inline-block;
+                    padding: 0.5em;
+                    transform: rotate(-45deg)
+
+    .news_section
+        font-family: $header_font
+        font-style: normal
+        line-height: normal
+
+        h1
+            font-size: 2.5em
+
+        .news_blog
+            font-size: 1em
+            padding: 1em
+
+            h2
+                font-weight: bold
+                font-size: 2em
+
+            .date
+                color: #4667c1
+
+            .bottom
+                text-decoration: none
+                color: $main_text_color
+                font-size: 1.2em
+                margin: 2em 1em
+                padding: 0.3em 1.5em
+                border-radius: 1.5em
+                background: $partners_color
+                color: $main_text_color
+
+footer
+    position: relative
+    background-color: $header_color
+    width: 100%
+    z-index: 20
+    border-bottom: 1px solid #C2C2C2
+
+    .header_container
+        height: 5em
+        grid-template-rows: 2fr 8fr auto
+        grid-gap: 1em
+        text-align: center
+    
+    .lab_logo
+        position: relative
+        // left: 13.89%;
+        // right: 72.29%;
+        // top: 17.5%;
+        // bottom: 16.25%;
+        display: flex
+        align-content: center
+        align-items: center
+        margin-left: 1em
+
+        .lablogocat
+            // background-color: #B7B7B7
+            display: inline-block
+            grid-column: 1
+            background: url('../img/logo_cat.png'), #ebe3e0
+            background-blend-mode: darken
+            height: 50px
+            min-width: 50px
+            background-repeat: no-repeat 
+
+        #text_logo
+            display: inline-flex
+            font-family: Fira Sans
+            font-style: normal
+            font-weight: 700
+            font-size: 22px
+            line-height: normal
+            color: #7E371C
+            margin-left: 2em    
+
+    #social
+        grid-column: 3
+
+
+
+
     
 
         
