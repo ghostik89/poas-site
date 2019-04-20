@@ -255,10 +255,12 @@ footer
     width: 100%
     z-index: 20
     border-bottom: 1px solid #C2C2C2
+    display: flex
+    align-items: flex-end
 
     .header_container
         height: 5em
-        grid-template-rows: 2fr 8fr auto
+        grid-template-rows: 3fr 6fr 3fr
         grid-gap: 1em
         text-align: center
     
@@ -276,12 +278,12 @@ footer
         .lablogocat
             // background-color: #B7B7B7
             display: inline-block
-            grid-column: 1
             background: url('../img/logo_cat.png'), #ebe3e0
             background-blend-mode: darken
             height: 50px
             min-width: 50px
-            background-repeat: no-repeat 
+            background-repeat: no-repeat
+            grid-column: 1 
 
         #text_logo
             display: inline-flex
@@ -291,11 +293,40 @@ footer
             font-size: 22px
             line-height: normal
             color: #7E371C
-            margin-left: 2em    
+            margin-left: 2em
+            
+    .VSTU
+        display: inline-flex
+        font-family: Fira Sans
+        font-style: normal
+        font-weight: 700
+        font-size: 22px
+        line-height: normal
+        color: #7E371C    
 
-    #social
-        grid-column: 3
+    .social
+        display: flex
+        align-items: flex-end
+        font-family: $header_font
+        font-weight: bold
+        font-size: 1.5em 
 
+        a
+         text-decoration: none   
+
+        .vk
+            border: solid $vk_color
+            color: $vk_color
+            padding: 0.06em 0.3em 
+            border-radius: 4em
+            margin-right: 1em
+
+        .facebook
+            border: solid $facebook_color
+            color: $facebook_color
+            padding: 0.06em 0.6em 
+            border-radius: 4em
+            margin-right: 1em
 
 
 
